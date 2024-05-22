@@ -1,29 +1,23 @@
 /** @type {import('tailwindcss').Config} */
-
 module.exports = {
-  content: [
-    './pages/**/*.{js,ts,jsx,tsx,mdx}',
-    './components/**/*.{js,ts,jsx,tsx,mdx}',
-    './app/**/*.{js,ts,jsx,tsx,mdx}',
-  ],
+  content: ["./src/**/*.{js,jsx}"],
   mode: "jit",
   theme: {
     extend: {
       colors: {
         primary: "#1A1A1A",
-        secondary: "#EDD574",
+        secondary: "#fea335",
+        main: "#021e31",
         mainRed: "#E30613",
-        primaryalt: "#434343",
+        main2: "#dfdfdf",
+        primaryalt: "#f7f6f6",
         textalt: "#898989",
-        maintext: "#575656"
+        maintext: "#575656",
+        mainalt: "#dddddd",
       },
       fontFamily: {
-        manierRegular: "manier-regular",
-        manierBold: "manier-bold",
-        manierMedium: "manier-medium",
-        manierLight: "manier-light",
-        manierHeavy: "manier-heavy",
-        manierBlack: "manier-black",
+        poppins: ["Poppins", "sans-serif"],
+        'instrument-sans': ["Instrument Sans", "sans-serif"],
       },
     },
     screens: {

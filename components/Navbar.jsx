@@ -48,7 +48,7 @@ const Navbar = () => {
   return (
     <nav className={`${styles.paddingX} w-full flex items-center fixed 
       md:py-4 ss:py-4 py-3 top-0 z-20 navsmooth backdrop-blur-md bg-opacity-90
-      ${ isScrolled ? 'bg-primaryalt shadow-lg' : '' }`}
+      ${ isScrolled ? 'bg-main2 shadow-lg' : '' }`}
     >
       <div className="w-full flex justify-between items-center 
       max-w-[86rem] mx-auto">
@@ -66,15 +66,15 @@ const Navbar = () => {
         </Link>
 
         <div className="hidden md:flex items-center justify-end w-full
-        gap-20">
-          <ul className="list-none flex gap-14">
+        gap-16">
+          <ul className="list-none flex gap-12">
             {navLinks.map((link) => (
               <li
                 key={link.id}
                 className={`${
                   active === link.title
-                    ? 'text-secondary'
-                    : 'text-primary'
+                    ? 'text-primary'
+                    : 'text-main'
                 } hover:text-textalt grow4 text-[18px] text-decoration-none 
                 cursor-pointer font-medium`}
                 onClick={() => {
@@ -90,14 +90,14 @@ const Navbar = () => {
           </ul>
           
           <div className='flex items-center gap-5'>
-            <button className='bg-main grow justify-center
-              text-[16px] py-2 px-10 text-white rounded-lg'
+            <button className='bg-main grow4 justify-center
+              text-[16px] py-2 px-10 text-white rounded-md'
               >
                 Sign In
             </button>
 
-            <button className='bg-main grow justify-center
-              text-[16px] py-2 px-10 text-white rounded-lg'
+            <button className='bg-main grow4 justify-center
+              text-[16px] py-2 px-10 text-white rounded-md'
               >
                 Register
             </button>

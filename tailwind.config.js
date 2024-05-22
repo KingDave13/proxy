@@ -10,15 +10,15 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        primary: "#1A1A1A",
-        secondary: "#fea335",
-        main: "#021e31",
+        primary: "#691a74",
+        secondary: "#FED33C",
+        primaryalt: "#DAD9D9",
+        mainalt: "#7D7D7D",
         mainRed: "#E30613",
-        main2: "#dfdfdf",
-        primaryalt: "#f7f6f6",
-        textalt: "#898989",
-        maintext: "#575656",
-        mainalt: "#dddddd",
+        main: "#434344",
+        main2: "#F3F3F3",
+        main3: "#B5B5B5",
+        green: "#4CA735"
       },
       fontFamily: {
         poppins: ["Poppins", "sans-serif"],
@@ -36,5 +36,3 @@ module.exports = {
   },
   plugins: [],
 };
-
-

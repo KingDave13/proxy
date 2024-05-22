@@ -61,13 +61,13 @@ const Navbar = () => {
             src={logo} 
             alt='logo'
             height={'auto'}
-            width={200}
+            width={180}
           />
         </Link>
 
-        <div className="flex items-center justify-center w-full hidden 
-        md:flex">
-          <ul className="list-none flex flex-row gap-16">
+        <div className="hidden md:flex items-center justify-end w-full
+        gap-20">
+          <ul className="list-none flex gap-14">
             {navLinks.map((link) => (
               <li
                 key={link.id}
@@ -75,7 +75,7 @@ const Navbar = () => {
                   active === link.title
                     ? 'text-secondary'
                     : 'text-primary'
-                } hover:text-textalt grow3 text-[18px] text-decoration-none 
+                } hover:text-textalt grow4 text-[18px] text-decoration-none 
                 cursor-pointer font-medium`}
                 onClick={() => {
                   setActive(link.title);
@@ -88,13 +88,23 @@ const Navbar = () => {
               </li>
             ))}
           </ul>
+          
+          <div className='flex items-center gap-5'>
+            <button className='bg-main grow justify-center
+              text-[16px] py-2 px-10 text-white rounded-lg'
+              >
+                Sign In
+            </button>
+
+            <button className='bg-main grow justify-center
+              text-[16px] py-2 px-10 text-white rounded-lg'
+              >
+                Register
+            </button>
+          </div>
+          
         </div>
 
-        <button className='hidden md:flex bg-main grow justify-center
-          text-[16px] py-3 w-[20%] text-white font-medium rounded-full'
-          >
-            Our Newsletter
-        </button>
 
         {/* FOR MOBILE */}
         

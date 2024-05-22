@@ -7,19 +7,24 @@ import {
 
 export const navLinks = [
     {
+      id: "home",
+      title: "Home",
+      route: "/",
+    },
+    {
       id: "about",
-      title: "About the club",
+      title: "About Us",
       route: "/about",
     },
     {
-      id: "membership",
-      title: "Membership",
-      route: "/membership",
+      id: "listings",
+      title: "Listings",
+      route: "/listings",
     },
     {
-      id: "events",
-      title: "Events",
-      route: "/events",
+      id: "agents",
+      title: "Agents",
+      route: "/agents",
     },
     {
       id: "contact",

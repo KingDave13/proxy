@@ -7,18 +7,17 @@ import { HiOutlineMenuAlt3 } from 'react-icons/hi';
 import Image from 'next/image';
 import Link from 'next/link';
 import { navLinks } from '@constants';
-import { logoalt, logo } from '@public/assets';
+import { logo } from '@public/assets';
 import { useRouter } from 'next/navigation';
 
 const Navbar = () => {
-  const [active, setActive] = useState('');
+  const [active, setActive] = useState('Home');
   const [toggle, setToggle] = useState(false);
   const menuRef = useRef(null);
-  const [isScrolled, setIsScrolled] = useState(false);
-
   const router = useRouter();
 
-  // Add an event listener to detect scrolling
+  const [isScrolled, setIsScrolled] = useState(false);
+
   useEffect(() => {
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 0);
@@ -45,72 +44,44 @@ const Navbar = () => {
     };
 }, []);
 
-const handleNavItemClick = (link) => {
-  if (router.pathname !== '/') {
-    router.push(`/#${link.id}`)
-  } else {
-    setActive(link.title);
-  }
-};
 
   return (
     <nav className={`${styles.paddingX} w-full flex items-center fixed 
-      md:py-6 ss:py-6 py-5 md:px-16 ss:px-16 px-6 top-0 z-20 navsmooth 
-      font-manierRegular ${ isScrolled ? 'bg-white shadow-lg' : '' }`}
+      md:py-4 ss:py-4 py-3 top-0 z-20 navsmooth backdrop-blur-md bg-opacity-90
+      ${ isScrolled ? 'bg-primaryalt shadow-lg' : '' }`}
     >
       <div className="w-full flex justify-between items-center 
-      max-w-[95rem] mx-auto">
-        <div className="flex items-center justify-center w-full hidden md:flex">
+      max-w-[86rem] mx-auto">
+        <Link href='/'
+          onClick={() => {
+          setActive('Home');
+          window.scrollTo(0, 0);
+          }}>
+          <Image 
+            src={logo} 
+            alt='logo'
+            height={'auto'}
+            width={200}
+          />
+        </Link>
+
+        <div className="flex items-center justify-center w-full hidden 
+        md:flex">
           <ul className="list-none flex flex-row gap-16">
-            {navLinks.slice(0, 2).map((link) => (
+            {navLinks.map((link) => (
               <li
                 key={link.id}
                 className={`${
                   active === link.title
                     ? 'text-secondary'
-                    : isScrolled ? 'text-primary' : 'text-white'
-                } hover:text-secondary grow3 text-[19px] text-decoration-none 
-                cursor-pointer`}
+                    : 'text-primary'
+                } hover:text-textalt grow3 text-[18px] text-decoration-none 
+                cursor-pointer font-medium`}
                 onClick={() => {
-                  handleNavItemClick(link);
-                }}
-              >
-                <a href={`#${link.id}`}>{link.title}</a>
-              </li>
-            ))}
-          </ul>
-
-          <Link href="/" 
-            onClick={(e) => {
-              e.preventDefault();
-              setActive('');
-              window.scrollTo({ 
-                top: 0, left: 0, 
-                behavior: 'smooth' });
-            }}
-            className='ml-44 mr-44'
-          >
-            <Image
-              src={isScrolled ? logo : logoalt}
-              alt="logo"
-              width={160}
-              height={'auto'}
-              className="object-contain"
-            />
-          </Link>
-
-          <ul className="list-none flex flex-row gap-16 hidden md:flex">
-            {navLinks.slice(2, 4).map((link) => (
-              <li
-                key={link.id}
-                className={`${
-                  active === link.title
-                    ? 'text-secondary'
-                    : isScrolled ? 'text-primary' : 'text-white'
-                } hover:text-secondary grow3 text-[19px] text-decoration-none 
-                cursor-pointer`}
-                onClick={() => {
-                  handleNavItemClick(link);
+                  setActive(link.title);
+                  if (link.special) {
+                    router.push(link.route);
+                  }
                 }}
               >
                 <a href={`#${link.id}`}>{link.title}</a>
@@ -119,39 +90,29 @@ const handleNavItemClick = (link) => {
           </ul>
         </div>
 
+        <button className='hidden md:flex bg-main grow justify-center
+          text-[16px] py-3 w-[20%] text-white font-medium rounded-full'
+          >
+            Our Newsletter
+        </button>
+
         {/* FOR MOBILE */}
         
-        <div className="md:hidden flex justify-between flex-1 items-center
+        <div className="md:hidden flex justify-end flex-1 items-center
         mt-3">
-          <Link href="/" 
-            onClick={() => { setActive(''); 
-            window.scrollTo({ 
-              top: 0, left: 0, 
-              behavior: 'smooth' }); 
-          }}
-          >
-            <Image
-              src={isScrolled ? logo : logoalt}
-              alt="logo"
-              width={130}
-              height="auto"
-              className="object-contain"
-            />
-          </Link>
-
           <div className="flex items-center z-20">
             {toggle ? (
               <BsX
                 size={40}
                 className="object-contain cursor-pointer"
-                style={{ color: isScrolled ? '#000' : '#fff' }}
+                style={{ color: isScrolled ? '#000' : '#021e31' }}
                 onClick={() => setToggle(!toggle)}
               />
             ) : (
               <HiOutlineMenuAlt3
                 size={40}
                 className="object-contain cursor-pointer"
-                style={{ color: isScrolled ? '#000' : '#fff' }}
+                style={{ color: isScrolled ? '#000' : '#021e31' }}
                 onClick={() => setToggle(!toggle)}
               />
             )}
@@ -159,7 +120,7 @@ const handleNavItemClick = (link) => {
           
           <div
             ref={menuRef}
-            className={`p-6 ss:mt-28 mt-24 bg-white absolute top-0 right-0 
+            className={`p-6 ss:mt-28 mt-24 bg-primaryalt absolute top-0 right-0 
             z-10 flex-col w-full shadow-xl
             ${toggle ? 'menu-slide-enter menu-slide-enter-active' 
             : 'menu-slide-exit menu-slide-exit-active'}`}
@@ -173,18 +134,30 @@ const handleNavItemClick = (link) => {
                     active === link.title
                       ? 'text-secondary'
                       : 'text-primary'
-                  } font-medium cursor-pointer ss:text-[20px] text-[16px] 
+                  } font-medium cursor-pointer ss:text-[20px] text-[17px] 
                   w-full
                   ${index !== navLinks.length - 1 ? 'border-b-[1px] pb-1.5 pt-1.5' : 'pt-1.5'}`}
                   onClick={() => {
                     setToggle(!toggle);
-                    handleNavItemClick(link);
+                    setActive(link.title);
+                    if (link.special) {
+                      router.push(link.route);
+                    }
                   }}
                 >
                   <a href={`#${link.id}`}>{link.title}</a>
                 </li>
               ))}
             </ul>
+
+            <button className='bg-main text-[16px] py-2 px-4
+              text-white rounded-[5px] mt-5 ss:text-[20px] text-[14px]'
+              onClick={() => {
+                setToggle(!toggle);
+              }}
+              >
+                Our Newsletter
+              </button>
           </div>
         </div>
       </div>

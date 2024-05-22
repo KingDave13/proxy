@@ -13,7 +13,7 @@ const RootLayout = ({ children }) => {
   return (
     <html lang='en'>
         <body>
-            <main className='bg-primary'>
+            <main className=''>
                 <Navbar />
                 {children}
                 <Footer />

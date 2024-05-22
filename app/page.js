@@ -2,8 +2,6 @@
 
 import About from "@components/About";
 
-import scrollToSection from "@constants/scrollToSection";
-
 const Home = () => {
 
   return (
@@ -39,7 +37,6 @@ const Home = () => {
                 ss:py-3 py-3 md:px-12 ss:px-7 px-3 text-primary 
                 md:rounded-[6px] ss:rounded-[3px] rounded-[3px] 
                 font-medium font-manier cursor-pointer'
-                onClick={() => scrollToSection('membership')}
               >
                 Become a Member
               </button>
@@ -51,7 +48,6 @@ const Home = () => {
                 md:rounded-[6px] ss:rounded-[3px] rounded-[3px] 
                 font-medium bg-transparent font-manier cursor-pointer
                 buttonhalf'
-                onClick={() => scrollToSection('contact')}
               >
                 Contact Us
               </button>
@@ -59,9 +55,9 @@ const Home = () => {
         </div>
       </div>
       
-      <div className="bg-primary">
+      {/* <div className="bg-primary">
         <About />
-      </div>
+      </div> */}
 
     </section>
   );

@@ -7,8 +7,6 @@ import { aboutimg } from "@public/assets";
 import { layout } from "@styles/styles";
 import Image from "next/image";
 
-import scrollToSection from "@constants/scrollToSection";
-
 const About = () => {
   return (
     <section className="md:min-h-[800px] ss:min-h-[600px] min-h-[850px] 
@@ -77,7 +75,6 @@ const About = () => {
                             md:rounded-[6px] ss:rounded-[3px] rounded-[3px] 
                             font-medium bg-transparent font-manier cursor-pointer
                             buttonhalf'
-                            onClick={() => scrollToSection('contact')}
                         >
                             Contact Us
                         </button>

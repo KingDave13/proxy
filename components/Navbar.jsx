@@ -75,8 +75,8 @@ const Navbar = () => {
                   active === link.title
                     ? 'font-semibold'
                     : 'text-main'
-                } hover:text-textalt grow4 text-[17px] text-decoration-none 
-                cursor-pointer`}
+                } hover:text-textalt text-[17px] text-decoration-none 
+                cursor-pointer hover:text-mainalt`}
                 onClick={() => {
                   setActive(link.title);
                   if (link.special) {

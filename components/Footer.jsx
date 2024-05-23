@@ -12,7 +12,7 @@ import Link from 'next/link';
 
 const Footer = () => {
   return (
-    <section className='w-full md:min-h-[600px] ss:min-h-[300px] 
+    <section className='w-full md:min-h-[500px] ss:min-h-[300px] 
     min-h-[300px] flex items-center sm:px-16 px-6 bg-main2'>
         <div className='flex mx-auto items-center w-full relative 
         flex-col justify-center max-w-[86rem] '>
@@ -27,7 +27,7 @@ const Footer = () => {
                             height={'auto'}
                         />
 
-                        <p className='text-main md:text-[16px] ss:text-[14px] 
+                        <p className='text-main md:text-[17px] ss:text-[14px] 
                         text-[12px] md:leading-[22px] ss:leading-[22px] leading-[18px]'>
                         Proxy is a real estate giant and armed with two decades of 
                         industry wisdom, we are focused on combining these 
@@ -52,9 +52,9 @@ const Footer = () => {
                     md:mt-8 ss:mt-8 mt-6'>
                         {footerLinks.map((footerLink, index) => (
                             <div key={index} className='flex mr-8'>
-                                <h4 className='font-medium md:text-[17px] 
+                                <h4 className='md:text-[17px] 
                                 ss:text-[15px] text-[14px] text-main
-                                cursor-pointer grow4'>
+                                cursor-pointer hover:text-primaryalt'>
                                     {footerLink.name}
                                 </h4>
                             </div>
@@ -64,13 +64,13 @@ const Footer = () => {
             </div>
 
             <motion.div variants={textVariant()} className='flex flex-col w-full'>
-                <div className='flex md:mt-16 ss:mt-10 mt-8 border-t-[1px] 
-                border-main md:pt-10 ss:pt-8 pt-6 items-center'>
+                <div className='flex md:mt-10 ss:mt-10 mt-8 border-t-[1px] 
+                border-main md:pt-8 ss:pt-8 pt-6 items-center'>
                     <BiCopyright className='sm:mr-2 mr-1 md:text-[20px] 
-                    ss:text-[18px] text-[15px] md:mt-1 ss:mt-1 mt-0 text-white' />
+                    ss:text-[18px] text-[15px] md:mt-1 ss:mt-1 mt-0 text-main' />
 
-                    <p className='md:text-[14px] ss:text-[16px] text-[12px] 
-                    text-white md:mt-1 ss:mt-1 mt-0.5'>
+                    <p className='md:text-[15px] ss:text-[16px] text-[12px] 
+                    text-main md:mt-1 ss:mt-1 mt-0.5'>
                         2024 Proxy Real Estate Ltd. All Rights Reserved.
                     </p>
                 </div>

@@ -7,22 +7,24 @@ import { SearchBtns } from "@constants";
 
 const ButtonCard = ({ name, Icon, index }) => {
     return (
-        <motion.div
-            variants={fadeIn('', 'spring', index * 0.5, 0.75)}
-            className='cursor-pointer grow4 bg-white shadow-md pt-6 
-            pb-6 pl-12 pr-12 items-center justify-center flex
-            rounded-md'
-            style={{ width: '190px', height: '120px' }}
-        >
-            <div className='flex items-center justify-center relative 
-            gap-2 flex-col'>
-                <Icon size={30} className='' />
+        <div className="grow4">
+            <motion.div
+                variants={fadeIn('', 'spring', index * 0.2, 0.75)}
+                className='cursor-pointer bg-white shadow-md pt-6 
+                pb-6 pl-12 pr-12 items-center justify-center flex
+                rounded-md'
+                style={{ width: '190px', height: '120px' }}
+            >
+                <div className='flex items-center justify-center relative 
+                gap-2 flex-col'>
+                    <Icon size={30} className='' />
 
-                <p className="text-main text-[15px] font-semibold">
-                    {name}
-                </p>
-            </div>
-        </motion.div>
+                    <p className="text-main text-[15px] font-semibold">
+                        {name}
+                    </p>
+                </div>
+            </motion.div>
+        </div>
     );
 };
 

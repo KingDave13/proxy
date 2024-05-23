@@ -73,7 +73,7 @@ const Navbar = () => {
                 key={link.id}
                 className={`${
                   active === link.title
-                    ? 'text-primaryalt font-medium'
+                    ? 'font-semibold'
                     : 'text-main'
                 } hover:text-textalt grow4 text-[17px] text-decoration-none 
                 cursor-pointer`}

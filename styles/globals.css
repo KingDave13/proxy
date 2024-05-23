@@ -28,7 +28,7 @@ body, html {
   object-fit: cover;
   background-position: center;
   width: auto;
-  height: 100vh;
+  height: 80vh;
 }
 
 @media (max-width: 1060px) {

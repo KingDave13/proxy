@@ -11,7 +11,7 @@ const Home = () => {
   return (
     <section className="relative w-full">
       <div className="flex sm:px-16 px-6 hero">
-        <div className='justify-center w-full mx-auto
+        <div className='justify-center w-full mx-auto relative
           max-w-[86rem] flex md:pt-12 ss:pt-20 pt-20' 
           >
             <div className="flex flex-col w-full justify-center">
@@ -57,11 +57,13 @@ const Home = () => {
                     <Search />
                 </div>
             </motion.div>      
+
+            <div className="absolute bottom-0">
+              <SearchButtons />
+            </div>
         </div>
       </div>
-      
-      <SearchButtons />
-
+  
       <About />
 
     </section>

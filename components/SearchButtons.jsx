@@ -6,23 +6,24 @@ import { fadeIn } from '@utils/motion';
 import { SearchBtns } from "@constants";
 import Image from "next/image";
 
-const ButtonCard = ({ item, index }) => {
+const ButtonCard = ({ name, Icon, index }) => {
     return (
         <motion.div
         variants={fadeIn('', 'spring', index * 0.5, 0.75)}
-        className='cursor-pointer grow2 bg-white shadow-md'>
+        className='cursor-pointer grow2 bg-white shadow-md pt-6 pb-6
+        pl-16 pr-16'>
             <div className='flex items-center justify-center relative
-            gap-2 flex-col'
+            gap-5 flex-col'
             >
-                {/* <Image
-                    src={Btn.Icon}
-                    alt={Btn.name}
-                    height={150}
-                    width={150}
+                <Image
+                    src={Icon}
+                    alt={name}
+                    height={50}
+                    width={50}
                     className='rounded-md'
-                /> */}
-                <p className="text-main text-[14px]">
-                    {item.name}
+                />
+                <p className="text-main text-[15px] font-semibold">
+                    {name}
                 </p>
             </div>
         </motion.div>
@@ -35,13 +36,14 @@ const SearchButtons = () => {
     mx-auto flex items-center relative">
         <div className='items-center w-full mx-auto flex 
         max-w-[86rem]'>
-            <div className="flex items-center w-full">
-                <div className='flex gap-3'>
+            <div className="flex items-center w-full justify-center">
+                <div className='flex gap-8 items-center'>
                     {SearchBtns.map((item, index) => (
                       <ButtonCard 
                         key={item.id}
                         index={index}
-                        {...item}
+                        name={item.name}
+                        Icon={item.Icon}
                       />
                     ))}
                 </div>

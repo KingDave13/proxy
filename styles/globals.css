@@ -23,6 +23,22 @@ body, html {
   height: 100%;
 }
 
+.hero {
+  background-image: url('/assets/heroImg.jpg');
+  object-fit: cover;
+  width: auto;
+  height: 100vh;
+}
+
+@media (max-width: 1060px) {
+  .hero {
+    background-image: url('/assets/heroImg.jpg');
+    object-fit: cover;
+    width: auto;
+    max-height: 90vh;
+  }
+}
+
 ol {
   list-style: decimal;
 }
@@ -37,7 +53,6 @@ ol {
 .show:hover button {
   opacity: 1;
 }
-
 
 @media screen and (max-width: 480px) {
   .mobile {

@@ -48,7 +48,7 @@ const Navbar = () => {
   return (
     <nav className={`${styles.paddingX} w-full flex items-center fixed 
       md:py-4 ss:py-4 py-3 top-0 z-20 navsmooth backdrop-blur-md bg-opacity-90
-      ${ isScrolled ? 'bg-main2 shadow-lg' : '' }`}
+      ${ isScrolled ? 'bg-white shadow-lg' : '' }`}
     >
       <div className="w-full flex justify-between items-center 
       max-w-[86rem] mx-auto">
@@ -75,7 +75,7 @@ const Navbar = () => {
                   active === link.title
                     ? 'text-primary font-medium'
                     : 'text-main'
-                } hover:text-textalt grow4 text-[18px] text-decoration-none 
+                } hover:text-textalt grow4 text-[17px] text-decoration-none 
                 cursor-pointer`}
                 onClick={() => {
                   setActive(link.title);

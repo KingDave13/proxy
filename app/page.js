@@ -6,9 +6,9 @@ const Home = () => {
 
   return (
     <section className="relative w-full">
-      <div className="flex sm:px-16 px-6">
+      <div className="flex sm:px-16 px-6 hero">
         <div className='items-center justify-center w-full mx-auto
-          max-w-[95rem] flex flex-col md:pt-16 ss:pt-20 pt-20' 
+          max-w-[86rem] flex flex-col md:pt-16 ss:pt-20 pt-20' 
           >
             <h1 className='text-white md:text-[80px] font-manierBold
             ss:text-[70px] text-[52px] md:leading-[90px] fade-in-from-bottom

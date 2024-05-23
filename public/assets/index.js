@@ -1,6 +1,6 @@
 import logo from './logo.png';
 import logoalt from './logoalt.png';
-import heroImg from './heroImg.png';
+import heroImg from './heroImg.jpg';
 import aboutimg from './aboutimg.png';
 import luxury from './luxury.png';
 import event from './event.png';

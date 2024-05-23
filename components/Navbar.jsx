@@ -61,7 +61,7 @@ const Navbar = () => {
             src={logo} 
             alt='logo'
             height={'auto'}
-            width={180}
+            width={160}
           />
         </Link>
 
@@ -73,10 +73,10 @@ const Navbar = () => {
                 key={link.id}
                 className={`${
                   active === link.title
-                    ? 'text-primary'
+                    ? 'text-primary font-medium'
                     : 'text-main'
                 } hover:text-textalt grow4 text-[18px] text-decoration-none 
-                cursor-pointer font-medium`}
+                cursor-pointer`}
                 onClick={() => {
                   setActive(link.title);
                   if (link.special) {
@@ -89,7 +89,7 @@ const Navbar = () => {
             ))}
           </ul>
           
-          <div className='flex items-center gap-5'>
+          <div className='flex items-center gap-3'>
             <button className='bg-main grow4 justify-center
               text-[16px] py-2 px-10 text-white rounded-md'
               >

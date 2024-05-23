@@ -2,6 +2,7 @@
 
 import About from "@components/About";
 import Search from "@components/Search";
+import SearchButtons from '@components/SearchButtons';
 import { motion } from 'framer-motion';
 import { fadeIn } from '@utils/motion';
 
@@ -39,7 +40,7 @@ const Home = () => {
               style={{ opacity: 0, animationDelay: '1s', animationFillMode: 'forwards' }}>
                 <button
                   className='grow4 bg-primaryalt border-none buttonhalf
-                  md:text-[18px] ss:text-[17px] text-[14px] md:py-4
+                  md:text-[18px] ss:text-[17px] text-[14px] md:py-3.5
                   ss:py-3 py-3 md:px-24 ss:px-7 px-3 text-white 
                   md:rounded-[6px] ss:rounded-[3px] rounded-[3px] 
                   font-medium cursor-pointer'
@@ -59,6 +60,8 @@ const Home = () => {
         </div>
       </div>
       
+      <SearchButtons />
+
       <About />
 
     </section>

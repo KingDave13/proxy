@@ -9,7 +9,9 @@ import contact from './contact.png';
 import twitter from './twitter.png';
 import instagram from './instagram.png';
 import facebook from './facebook.png';
-import linkedin from './linkedin.png';
+import tiktok from './tiktok.png';
+import whatsapp from './whatsapp.png';
+import youtube from './youtube.png';
 import arrow from './arrow.png';
 import menu from './menu.png';
 import warning from './warning.png';
@@ -26,8 +28,10 @@ export {
     twitter,
     instagram,
     facebook,
-    linkedin,
     arrow,
     menu,
     warning,
+    tiktok,
+    youtube,
+    whatsapp,
 }

@@ -1,9 +1,5 @@
-import { 
-  twitter, 
-  instagram, 
-  facebook, 
-  linkedin, 
-} from "@public/assets";
+import { twitter, instagram, facebook, whatsapp, youtube, tiktok } from '@public/assets';
+
 
 import { FaRegBuilding } from "react-icons/fa";
 import { HiOutlineBuildingLibrary } from "react-icons/hi2";
@@ -81,25 +77,35 @@ export const SearchBtns = [
 
 export const socialMedia = [
   {
-    id: "twitter",
-    Icon: twitter,
+    id: "facebook",
+    image: facebook,
     link: ""
   },
   {
     id: "instagram",
-    Icon: instagram,
+    image: instagram,
     link: ""
   },
   {
-    id: "facebook",
-    Icon: facebook,
+    id: "twitter",
+    image: twitter,
     link: ""
   },
   {
-    id: "linkedin",
-    Icon: linkedin,
+    id: "whatsapp",
+    image: whatsapp,
     link: ""
-  }
+  },
+  {
+    id: "youtube",
+    image: youtube,
+    link: ""
+},
+  {
+    id: "tiktok",
+    image: tiktok,
+    link: ""
+  },
 ];
 
 export const footerLinks =[
@@ -122,5 +128,15 @@ export const footerLinks =[
     id: "contact",
     name: "Contact Us",
     route: "/contact",
+  },
+  {
+    id: "privacy",
+    name: "Privacy Policy",
+    route: "/privacy",
+  },
+  {
+    id: "terms",
+    name: "Terms of Usage",
+    route: "/terms",
   },
 ];

@@ -22,7 +22,7 @@ const About = () => {
                 </h1>
                 <motion.div variants={slideIn('down', 'tween', 0.2, 0.5)}
                 className="flex-1 relative items-center justify-center">
-                    <div className='bg-main w-full h-[3px]' />
+                    <div className='bg-main w-full h-[2px]' />
                 </motion.div>
             </motion.div>
             
@@ -34,32 +34,27 @@ const About = () => {
                     <p className='text-main md:text-[17px] ss:text-[14px] 
                     text-[13px] md:max-w-[700px] ss:max-w-[400px]  
                     md:leading-[22px]'>
-                    Nuude! is an exclusively private club standing to 
-                    serve the social and entertainment needs of its 
-                    members and guests by maintaining the highest 
-                    standards of excellence in all endeavours, providing 
-                    creative and culturally rich programs, and by 
-                    providing a safe and comfortable environment for 
-                    personal exploration.
+                        The world of commercial real estate is evolving 
+                        rapidly, led by a vanguard of dedicated pioneers 
+                        who are disrupting conventional methods to 
+                        revolutionize your real estate journey.
                     </p>
 
                     <p className='text-main md:text-[17px] ss:text-[14px] 
                     text-[13px] md:max-w-[700px] ss:max-w-[400px] 
                     md:mt-5 ss:mt-5 mt-5 md:leading-[22px]'>
-                    The club's exclusivity adds to its allure, ensuring 
-                    that only those who are genuinely curious and 
-                    open-minded individuals are granted membership. By 
-                    carefully curating its members, Nuude! strives to 
-                    foster a community of like-minded individuals who can 
-                    share in the exploration of their desires, passions 
-                    and interests.
+                        Armed with two decades of industry wisdom, we 
+                        are focused on combining these insights with the 
+                        prowess of modern technology, delivering 
+                        outcomes that not only meet but exceed your 
+                        expectations.
                     </p>    
 
-                    <div className='flex md:mt-8 ss:mt-8 mt-6 md:gap-8 ss:gap-5 
+                    <div className='flex md:mt-8 ss:mt-8 mt-6 md:gap-5 ss:gap-5 
                     gap-3 items-center buttonfull'>
                         <button
                             className='grow4 bg-primaryalt border-none buttonhalf
-                            md:text-[17px] ss:text-[16px] text-[14px] md:py-4
+                            md:text-[17px] ss:text-[16px] text-[14px] md:py-3.5
                             ss:py-3 py-3 md:px-24 ss:px-3 px-3 text-white 
                             md:rounded-[6px] ss:rounded-[3px] rounded-[3px] 
                             font-medium font-manier cursor-pointer'
@@ -69,7 +64,7 @@ const About = () => {
 
                         <button
                             className='border-[1px] grow4 border-primaryalt 
-                            md:text-[17px] ss:text-[16px] text-[14px] md:py-4 
+                            md:text-[17px] ss:text-[16px] text-[14px] md:py-3.5 
                             ss:py-3 py-3 md:px-20 ss:px-10 px-6 text-primaryalt 
                             md:rounded-[6px] ss:rounded-[3px] rounded-[3px] 
                             font-medium bg-transparent cursor-pointer
@@ -83,7 +78,7 @@ const About = () => {
                 <motion.div 
                     variants={slideIn('down', 'tween', 0.2, 0.5)}>
                     <Image src={aboutimg} alt='about'
-                    className='md:h-[400px] ss:h-[300px] w-auto'
+                    className='md:h-[300px] ss:h-[300px] w-auto'
                     />
                 </motion.div>
             </motion.div>

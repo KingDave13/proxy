@@ -10,7 +10,7 @@ const Home = () => {
 
   return (
     <section className="relative w-full">
-      <div className="flex sm:px-16 px-6 hero">
+      <div className="flex sm:px-16 px-6 hero justify-center">
         <div className='justify-center w-full mx-auto relative
           max-w-[86rem] flex md:pt-12 ss:pt-20 pt-20' 
           >
@@ -40,7 +40,7 @@ const Home = () => {
               style={{ opacity: 0, animationDelay: '1s', animationFillMode: 'forwards' }}>
                 <button
                   className='grow4 bg-primaryalt border-none buttonhalf
-                  md:text-[18px] ss:text-[17px] text-[14px] md:py-3.5
+                  md:text-[18px] ss:text-[17px] text-[14px] md:py-3
                   ss:py-3 py-3 md:px-24 ss:px-7 px-3 text-white 
                   md:rounded-[6px] ss:rounded-[3px] rounded-[3px] 
                   font-medium cursor-pointer'
@@ -50,17 +50,17 @@ const Home = () => {
               </div>
             </div>
 
-            <motion.div variants={fadeIn('down', 'spring', 0.3)} 
+            <motion.div variants={fadeIn('left', 'spring', 0.3)} 
               className='flex relative items-center justify-center
               w-2/4'>
-                <div className="">
+                <div className="search fade-in">
                     <Search />
                 </div>
             </motion.div>      
+        </div>
 
-            <div className="absolute bottom-0">
-              <SearchButtons />
-            </div>
+        <div className="absolute top-[780px] z-10">
+          <SearchButtons />
         </div>
       </div>
   

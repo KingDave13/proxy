@@ -10,12 +10,14 @@ const ButtonCard = ({ name, Icon, index }) => {
         <motion.div
             variants={fadeIn('', 'spring', index * 0.5, 0.75)}
             className='cursor-pointer grow4 bg-white shadow-md pt-6 
-            pb-6 pl-12 pr-12 items-center justify-center flex'
-            style={{ width: '200px', height: '100px' }}
+            pb-6 pl-12 pr-12 items-center justify-center flex
+            rounded-md'
+            style={{ width: '190px', height: '120px' }}
         >
             <div className='flex items-center justify-center relative 
             gap-2 flex-col'>
-                <Icon size={30} className='rounded-md' />
+                <Icon size={30} className='' />
+
                 <p className="text-main text-[15px] font-semibold">
                     {name}
                 </p>
@@ -27,7 +29,7 @@ const ButtonCard = ({ name, Icon, index }) => {
 
 const SearchButtons = () => {
   return (
-    <section className="md:min-h-[300px] ss:min-h-[600px] min-h-[850px] 
+    <section className="md:min-h-[100px]
     mx-auto flex items-center relative">
         <div className='items-center w-full mx-auto flex 
         max-w-[86rem]'>

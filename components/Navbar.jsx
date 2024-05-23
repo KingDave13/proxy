@@ -65,8 +65,8 @@ const Navbar = () => {
           />
         </Link>
 
-        <div className="hidden md:flex items-center justify-end w-full
-        gap-16">
+        <div className="flex items-center justify-center w-full hidden 
+        md:flex">
           <ul className="list-none flex gap-12">
             {navLinks.map((link) => (
               <li
@@ -88,23 +88,14 @@ const Navbar = () => {
               </li>
             ))}
           </ul>
-          
-          <div className='flex items-center gap-3'>
-            <button className='bg-main grow4 justify-center
-              text-[16px] py-2 px-10 text-white rounded-md'
-              >
-                Sign In
-            </button>
-
-            <button className='bg-main grow4 justify-center
-              text-[16px] py-2 px-10 text-white rounded-md'
-              >
-                Register
-            </button>
-          </div>
-          
         </div>
 
+        <button className='border-main border-[1.5px] grow4 justify-center 
+        hidden md:flex text-[16px] py-2.5 px-10 text-main rounded-md 
+        w-[15%]'
+            >
+              Sign In
+          </button>
 
         {/* FOR MOBILE */}
         

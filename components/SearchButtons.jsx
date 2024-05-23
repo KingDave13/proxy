@@ -4,31 +4,22 @@ import SectionWrapper from "@hoc/SectionWrapper";
 import { motion } from 'framer-motion';
 import { fadeIn } from '@utils/motion';
 import { SearchBtns } from "@constants";
-import Image from "next/image";
 
 const ButtonCard = ({ name, Icon, index }) => {
     return (
         <motion.div
-        variants={fadeIn('', 'spring', index * 0.5, 0.75)}
-        className='cursor-pointer grow2 bg-white shadow-md pt-6 pb-6
-        pl-16 pr-16'>
-            <div className='flex items-center justify-center relative
-            gap-5 flex-col'
-            >
-                <Image
-                    src={Icon}
-                    alt={name}
-                    height={50}
-                    width={50}
-                    className='rounded-md'
-                />
+            variants={fadeIn('', 'spring', index * 0.5, 0.75)}
+            className='cursor-pointer grow4 bg-white shadow-md pt-6 pb-6 pl-16 pr-16'>
+            <div className='flex items-center justify-center relative gap-5 flex-col'>
+                <Icon size={30} className='rounded-md' />
                 <p className="text-main text-[15px] font-semibold">
                     {name}
                 </p>
             </div>
         </motion.div>
-    )
+    );
 };
+
 
 const SearchButtons = () => {
   return (
@@ -37,7 +28,7 @@ const SearchButtons = () => {
         <div className='items-center w-full mx-auto flex 
         max-w-[86rem]'>
             <div className="flex items-center w-full justify-center">
-                <div className='flex gap-8 items-center'>
+                <div className='flex gap-6 items-center'>
                     {SearchBtns.map((item, index) => (
                       <ButtonCard 
                         key={item.id}

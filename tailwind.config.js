@@ -12,7 +12,7 @@ module.exports = {
       colors: {
         primary: "#691a74",
         secondary: "#FED33C",
-        primaryalt: "#DAD9D9",
+        primaryalt: "#ff7ba7",
         mainalt: "#7D7D7D",
         mainRed: "#E30613",
         main: "#434344",

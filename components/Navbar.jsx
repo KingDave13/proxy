@@ -7,7 +7,7 @@ import { HiOutlineMenuAlt3 } from 'react-icons/hi';
 import Image from 'next/image';
 import Link from 'next/link';
 import { navLinks } from '@constants';
-import { logo } from '@public/assets';
+import { logoalt } from '@public/assets';
 import { useRouter } from 'next/navigation';
 
 const Navbar = () => {
@@ -58,7 +58,7 @@ const Navbar = () => {
           window.scrollTo(0, 0);
           }}>
           <Image 
-            src={logo} 
+            src={logoalt} 
             alt='logo'
             height={'auto'}
             width={160}
@@ -73,7 +73,7 @@ const Navbar = () => {
                 key={link.id}
                 className={`${
                   active === link.title
-                    ? 'text-primary font-medium'
+                    ? 'text-primaryalt font-medium'
                     : 'text-main'
                 } hover:text-textalt grow4 text-[17px] text-decoration-none 
                 cursor-pointer`}

@@ -8,7 +8,7 @@ const Home = () => {
     <section className="relative w-full">
       <div className="flex sm:px-16 px-6 hero">
         <div className='justify-center w-full mx-auto
-          max-w-[86rem] flex flex-col md:pt-16 ss:pt-20 pt-20' 
+          max-w-[86rem] flex flex-col md:pt-12 ss:pt-20 pt-20' 
           >
             <h1 className='text-main md:text-[80px] ss:text-[70px] 
             text-[52px] md:leading-[90px] fade-in-from-bottom

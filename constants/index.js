@@ -77,7 +77,7 @@ export const SearchBtns = [
     Icon: BsBuildings,
     link: "listings/apartment"
   },
-]
+];
 
 export const socialMedia = [
   {

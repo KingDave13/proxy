@@ -1,4 +1,4 @@
-import { twitter, instagram, facebook, whatsapp, youtube, tiktok } from '@public/assets';
+import { twitter, instagram, facebook, linkedin } from '@public/assets';
 
 
 import { FaRegBuilding } from "react-icons/fa";
@@ -77,35 +77,25 @@ export const SearchBtns = [
 
 export const socialMedia = [
   {
-    id: "facebook",
-    image: facebook,
+    id: "twitter",
+    Icon: twitter,
     link: ""
   },
   {
     id: "instagram",
-    image: instagram,
+    Icon: instagram,
     link: ""
   },
   {
-    id: "twitter",
-    image: twitter,
+    id: "facebook",
+    Icon: facebook,
     link: ""
   },
   {
-    id: "whatsapp",
-    image: whatsapp,
+    id: "linkedin",
+    Icon: linkedin,
     link: ""
-  },
-  {
-    id: "youtube",
-    image: youtube,
-    link: ""
-},
-  {
-    id: "tiktok",
-    image: tiktok,
-    link: ""
-  },
+  }
 ];
 
 export const footerLinks =[

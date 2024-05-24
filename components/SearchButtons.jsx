@@ -17,7 +17,7 @@ const ButtonCard = ({ name, Icon, index }) => {
             >
                 <div className='flex items-center justify-center relative 
                 gap-2 flex-col'>
-                    <Icon size={30} className='' />
+                    <Icon size={30} className='text-main' />
 
                     <p className="text-main text-[15px] font-semibold">
                         {name}

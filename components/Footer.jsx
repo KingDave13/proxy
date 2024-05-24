@@ -39,7 +39,8 @@ const Footer = () => {
                             {socialMedia.map((social, index) => (
                                 <a target='_blank' href={social.link} rel="noreferrer" key={index}>
                                     <Image 
-                                        src={social.image}
+                                        src={social.Icon}
+                                        alt={social.id}
                                         width={30}
                                         height={30}
                                     />

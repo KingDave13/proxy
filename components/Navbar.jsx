@@ -73,10 +73,10 @@ const Navbar = () => {
                 key={link.id}
                 className={`${
                   active === link.title
-                    ? 'font-semibold'
-                    : 'text-main'
-                } hover:text-textalt text-[17px] text-decoration-none 
-                cursor-pointer hover:text-mainalt`}
+                    ? 'font-semibold text-white'
+                    : 'text-white'
+                } hover:text-main2 text-[17px] text-decoration-none 
+                cursor-pointer`}
                 onClick={() => {
                   setActive(link.title);
                   if (link.special) {

@@ -4,8 +4,8 @@ import Footer from '@components/Footer';
 
 
 export const metadata = {
-    title: "Proxy Real Estate",
-    description: "The world's leading real estate brokerage services"
+  title: "Proxy Real Estate",
+  description: "The world's leading real estate brokerage services"
 };
 
 

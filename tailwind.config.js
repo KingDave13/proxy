@@ -21,8 +21,7 @@ module.exports = {
         green: "#4CA735"
       },
       fontFamily: {
-        poppins: ["Poppins", "sans-serif"],
-        'instrument-sans': ["Instrument Sans", "sans-serif"],
+        prototype: "prototype",
       },
     },
     screens: {

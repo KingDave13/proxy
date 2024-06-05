@@ -13,7 +13,7 @@ const RootLayout = ({ children }) => {
   return (
     <html lang='en'>
         <body>
-            <main className=''>
+            <main className='font-prototype'>
                 <Navbar />
                 {children}
                 <Footer />

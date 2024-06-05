@@ -73,7 +73,7 @@ const Navbar = () => {
                 key={link.id}
                 className={`${
                   active === link.title
-                    ? 'font-semibold text-custom-gradient'
+                    ? 'font-bold text-custom-gradient'
                     : 'text-main'
                 } text-[17px] text-decoration-none cursor-pointer`}
                 onClick={() => {

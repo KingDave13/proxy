@@ -16,7 +16,7 @@ const About = () => {
             <motion.div variants={slideIn('up', 'tween', 0.2, 0.5)}
             className="flex items-center w-full md:mb-12 ss:mb-8 
             mb-8">
-                <h1 className="text-primaryalt font-bold md:text-[55px]
+                <h1 className="text-custom-gradient font-bold md:text-[55px]
                 ss:text-[45px] text-[33px] md:mr-14 ss:mr-6 mr-5">
                     Who are we?
                 </h1>
@@ -53,7 +53,7 @@ const About = () => {
                     <div className='flex md:mt-8 ss:mt-8 mt-6 md:gap-5 ss:gap-5 
                     gap-3 items-center buttonfull'>
                         <button
-                            className='grow4 bg-primaryalt border-none buttonhalf
+                            className='grow4 bg-custom-gradient border-none buttonhalf
                             md:text-[17px] ss:text-[16px] text-[14px] md:py-3.5
                             ss:py-3 py-3 md:px-24 ss:px-3 px-3 text-white 
                             md:rounded-[6px] ss:rounded-[3px] rounded-[3px] 
@@ -63,9 +63,9 @@ const About = () => {
                         </button>
 
                         <button
-                            className='border-[1px] grow4 border-primaryalt 
+                            className='border-[1px] grow4 border-gradient 
                             md:text-[17px] ss:text-[16px] text-[14px] md:py-3.5 
-                            ss:py-3 py-3 md:px-20 ss:px-10 px-6 text-primaryalt 
+                            ss:py-3 py-3 md:px-20 ss:px-10 px-6 text-custom-gradient 
                             md:rounded-[6px] ss:rounded-[3px] rounded-[3px] 
                             font-medium bg-transparent cursor-pointer
                             buttonhalf'

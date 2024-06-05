@@ -22,7 +22,7 @@ export const navLinks = [
   {
     id: "properties",
     title: "Properties",
-    route: "/listings",
+    route: "/properties",
   },
   {
     id: "agents",
@@ -38,40 +38,40 @@ export const navLinks = [
 
 export const SearchBtns = [
   {
-    id: "studio",
-    name: "Studio",
+    id: "office",
+    name: "Office",
     Icon: FaRegBuilding,
-    link: "listings/studio"
+    link: "properties/office"
   },
   {
-    id: "historic",
-    name: "Historic",
+    id: "investment",
+    name: "Investment Sales",
     Icon: HiOutlineBuildingLibrary,
-    link: "listings/historic"
+    link: "properties/investmentsales"
   },
   {
-    id: "unique",
-    name: "Unique",
+    id: "resources",
+    name: "Resources",
     Icon: TbBuildingPavilion,
-    link: "listings/unique"
+    link: "properties/resources"
   },
   {
     id: "modern",
     name: "Modern",
     Icon: RiBuilding2Line,
-    link: "listings/modern"
+    link: "properties/modern"
   },
   {
     id: "family",
     name: "Family House",
     Icon: TbBuildingCottage,
-    link: "listings/familyhouse"
+    link: "properties/familyhouse"
   },
   {
     id: "apartment",
     name: "Apartment",
     Icon: BsBuildings,
-    link: "listings/apartment"
+    link: "properties/apartment"
   },
 ];
 

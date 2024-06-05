@@ -73,11 +73,9 @@ const Navbar = () => {
                 key={link.id}
                 className={`${
                   active === link.title
-                    ? 'font-semibold text-white '
-                    : 'text-white'
-                } hover:text-main2 text-[17px] text-decoration-none 
-                cursor-pointer 
-                ${ isScrolled ? 'text-main' : '' }`}
+                    ? 'font-semibold text-main'
+                    : 'text-main'
+                } text-[17px] text-decoration-none cursor-pointer`}
                 onClick={() => {
                   setActive(link.title);
                   if (link.special) {
@@ -91,8 +89,8 @@ const Navbar = () => {
           </ul>
         </div>
 
-        <button className='border-white border-[1px] grow4 justify-center 
-        hidden md:flex text-[16px] py-2.5 px-10 text-white rounded-md 
+        <button className='border-main border-[1px] grow4 justify-center 
+        hidden md:flex text-[16px] py-2.5 px-10 text-main rounded-md 
         w-[15%]'
             >
               Sign In

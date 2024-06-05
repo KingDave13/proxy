@@ -6,6 +6,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400&display=swap');
 
+@layer utilities {
+  .text-custom-gradient {
+    background: linear-gradient(to bottom, #da1f88, #360b41);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+}
+
 :root {
   --black-gradient: linear-gradient(
     144.39deg,

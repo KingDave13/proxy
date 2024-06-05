@@ -75,7 +75,7 @@ const Search = () => {
         <div className='flex flex-col bg-white md:p-8 ss:p-8 p-5 
         md:rounded-[20px] rounded-[12px] md:gap-3 ss:gap-3 gap-2 
         border-[1px] border-main3'>
-            <h2 className='text-primaryalt font-bold md:text-[22px]
+            <h2 className='text-custom-gradient font-bold md:text-[22px]
             ss:text-[20px] text-[18px] tracking-tight  md:leading-[30px] 
             ss:leading-[25px] leading-[25px]'>
                 Let us know exactly what you want
@@ -136,7 +136,7 @@ const Search = () => {
                     <div className="w-full mt-1">
                         <button
                         type="submit"
-                        className="bg-primaryalt grow5 md:text-[15px] w-full
+                        className="bg-custom-gradient grow5 md:text-[15px] w-full
                         ss:text-[16px] text-[12px] md:py-3 ss:py-3 py-2.5 
                         text-white md:rounded-lg rounded-md border-none"
                         >
@@ -169,7 +169,7 @@ const Search = () => {
                     <div className="w-full mt-1">
                         <button
                         type="submit"
-                        className="bg-primaryalt grow5 md:text-[15px] w-full
+                        className="bg-custom-gradient grow5 md:text-[15px] w-full
                         ss:text-[16px] text-[12px] md:py-3 ss:py-3 py-2.5 
                         text-white md:rounded-lg rounded-md border-none"
                         >

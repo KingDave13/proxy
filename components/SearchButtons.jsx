@@ -7,7 +7,7 @@ import { SearchBtns } from "@constants";
 
 const ButtonCard = ({ name, Icon, index }) => {
     return (
-        <div className="grow4">
+        <div className="grow4 hover:shadow-lg">
             <motion.div
                 variants={fadeIn('', 'spring', index * 0.2, 0.75)}
                 className='cursor-pointer bg-white shadow-md pt-6 

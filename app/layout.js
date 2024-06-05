@@ -18,10 +18,7 @@ const RootLayout = ({ children }) => {
                 {children}
                 <Footer />
 
-                <div className='bottom-28 right-0 z-20 fixed'>
-                  <ContactButton />
-                </div>
-                
+                <ContactButton />
             </main>
         </body>
     </html>

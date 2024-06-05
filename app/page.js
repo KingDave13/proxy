@@ -18,9 +18,9 @@ const Home = () => {
               <h1 className='text-black md:text-[80px] ss:text-[70px] 
               text-[52px] md:leading-[90px] fade-in-from-bottom
               ss:leading-[70px] leading-[55px] font-bold'>
-                PROXY- <span className="text-primaryalt">
+                proxy- <span className="text-custom-gradient">
                 <br className="ss:flex hidden"></br>
-                Reinventing the </span> <br className="ss:flex hidden"></br>
+                reinventing the </span> <br className="ss:flex hidden"></br>
                 real estate business.
               </h1>
 
@@ -39,7 +39,7 @@ const Home = () => {
               buttonfull fade-in-from-bottom2'
               style={{ opacity: 0, animationDelay: '1s', animationFillMode: 'forwards' }}>
                 <button
-                  className='grow4 bg-primaryalt border-none buttonhalf
+                  className='grow4 bg-custom-gradient border-none buttonhalf
                   md:text-[18px] ss:text-[17px] text-[14px] md:py-3
                   ss:py-3 py-3 md:px-24 ss:px-7 px-3 text-white 
                   md:rounded-[6px] ss:rounded-[3px] rounded-[3px] 

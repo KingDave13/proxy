@@ -14,6 +14,13 @@
   }
 }
 
+@layer utilities {
+  .bg-custom-gradient {
+    background: linear-gradient(to bottom, #da1f88, #360b41);
+    -webkit-background-fill-color: transparent;
+  }
+}
+
 :root {
   --black-gradient: linear-gradient(
     144.39deg,

@@ -13,12 +13,15 @@ const RootLayout = ({ children }) => {
   return (
     <html lang='en'>
         <body>
-            <main className='font-oxanium'>
+            <main className='font-oxanium relative'>
                 <Navbar />
                 {children}
                 <Footer />
 
-                <ContactButton />
+                <div className='bottom-28 right-0 z-20 fixed'>
+                  <ContactButton />
+                </div>
+                
             </main>
         </body>
     </html>

@@ -21,7 +21,7 @@ module.exports = {
         green: "#4CA735"
       },
       fontFamily: {
-        oxanium: ["Oxanium", "sans-serif"],
+        'oxanium': ["Oxanium", "sans-serif"],
       },
     },
     screens: {

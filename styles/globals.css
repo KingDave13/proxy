@@ -2,46 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-@font-face {
-  font-family: 'lustra';
-  src: url('../public/Lustra.otf');
-}
-
-@font-face {
-  font-family: 'lustraBlack';
-  src: url('../public/LustraBlack.otf');
-}
-
-@font-face {
-  font-family: 'lustraBold';
-  src: url('../public/LustraBold.otf');
-}
-
-@font-face {
-  font-family: 'lustraBook';
-  src: url('../public/LustraBook.otf');
-}
-
-@font-face {
-  font-family: 'lustraLight';
-  src: url('../public/LustraLight.otf');
-}
-
-@font-face {
-  font-family: 'lustraMedium';
-  src: url('../public/LustraMedium.otf');
-}
-
-@font-face {
-  font-family: 'lustraSemiBold';
-  src: url('../public/LustraSemiBold.otf');
-}
-
-@font-face {
-  font-family: 'lustraThin';
-  src: url('../public/LustraThin.otf');
-}
-
+@import url('https://fonts.googleapis.com/css2?family=Oxanium:wght@200..800&display=swap');
 
 @layer utilities {
   .text-custom-gradient {

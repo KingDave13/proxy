@@ -20,8 +20,8 @@ export const navLinks = [
     route: "/about",
   },
   {
-    id: "listings",
-    title: "Listings",
+    id: "properties",
+    title: "Properties",
     route: "/listings",
   },
   {

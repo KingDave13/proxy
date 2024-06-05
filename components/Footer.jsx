@@ -2,7 +2,7 @@
 
 import SectionWrapperAlt from '@hoc/SectionWrapperAlt';
 import { motion } from 'framer-motion';
-import { textVariant, fadeIn } from '@utils/motion';
+import { textVariant } from '@utils/motion';
 import { BiCopyright } from 'react-icons/bi';
 import { footerLinks, socialMedia } from '@constants';
 import { logoalt } from '@public/assets';

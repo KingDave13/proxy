@@ -1,7 +1,7 @@
 import '@styles/globals.css';
 import Navbar from '@components/Navbar';
 import Footer from '@components/Footer';
-
+import ContactButton from '@constants/ContactButton';
 
 export const metadata = {
   title: "Proxy Real Estate",
@@ -17,6 +17,8 @@ const RootLayout = ({ children }) => {
                 <Navbar />
                 {children}
                 <Footer />
+
+                <ContactButton />
             </main>
         </body>
     </html>

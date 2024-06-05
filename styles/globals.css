@@ -3,12 +3,45 @@
 @tailwind utilities;
 
 @font-face {
-  font-family: 'prototype';
-  src: url('../public/Prototype.ttf');
+  font-family: 'lustra';
+  src: url('../public/Lustra.otf');
 }
 
-/* @import url('https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400&display=swap'); */
+@font-face {
+  font-family: 'lustraBlack';
+  src: url('../public/LustraBlack.otf');
+}
+
+@font-face {
+  font-family: 'lustraBold';
+  src: url('../public/LustraBold.otf');
+}
+
+@font-face {
+  font-family: 'lustraBook';
+  src: url('../public/LustraBook.otf');
+}
+
+@font-face {
+  font-family: 'lustraLight';
+  src: url('../public/LustraLight.otf');
+}
+
+@font-face {
+  font-family: 'lustraMedium';
+  src: url('../public/LustraMedium.otf');
+}
+
+@font-face {
+  font-family: 'lustraSemiBold';
+  src: url('../public/LustraSemiBold.otf');
+}
+
+@font-face {
+  font-family: 'lustraThin';
+  src: url('../public/LustraThin.otf');
+}
+
 
 @layer utilities {
   .text-custom-gradient {

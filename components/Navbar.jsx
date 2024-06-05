@@ -65,8 +65,8 @@ const Navbar = () => {
           />
         </Link>
 
-        <div className="flex items-center justify-center w-full hidden 
-        md:flex">
+        <div className="flex items-center justify-end w-full hidden 
+        mr-16 md:flex">
           <ul className="list-none flex gap-12">
             {navLinks.map((link) => (
               <li

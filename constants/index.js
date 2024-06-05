@@ -3,9 +3,9 @@ import { twitter, instagram, facebook, linkedin } from '@public/assets';
 
 import { FaRegBuilding } from "react-icons/fa";
 import { HiOutlineBuildingLibrary } from "react-icons/hi2";
-import { TbBuildingPavilion, TbBuildingCottage  } from "react-icons/tb";
 import { RiBuilding2Line } from "react-icons/ri";
 import { BsBuildings } from "react-icons/bs";
+import { GrResources } from "react-icons/gr";
 
 
 export const navLinks = [
@@ -52,7 +52,7 @@ export const SearchBtns = [
   {
     id: "resources",
     name: "Resources",
-    Icon: TbBuildingPavilion,
+    Icon: GrResources,
     link: "properties/resources"
   },
   {

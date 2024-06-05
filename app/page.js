@@ -15,9 +15,9 @@ const Home = () => {
           max-w-[86rem] flex md:pt-12 ss:pt-20 pt-20' 
           >
             <div className="flex flex-col w-full justify-center">
-              <h1 className='text-black md:text-[80px] ss:text-[70px] 
+              <h1 className='text-black md:text-[82px] ss:text-[70px] 
               text-[52px] md:leading-[90px] fade-in-from-bottom
-              ss:leading-[70px] leading-[55px] font-bold'>
+              ss:leading-[70px] leading-[55px] font-black tracking-tight'>
                 proxy- <span className="text-custom-gradient">
                 <br className="ss:flex hidden"></br>
                 reinventing the </span> <br className="ss:flex hidden"></br>

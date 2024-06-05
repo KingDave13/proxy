@@ -3,7 +3,6 @@ import logoalt from './logoalt.png';
 import heroImg from './heroImg.jpg';
 import aboutimg from './aboutimg.png';
 import luxury from './luxury.png';
-import event from './event.png';
 import membership from './membership.png';
 import contact from './contact.png';
 import twitter from './twitter.png';
@@ -23,7 +22,6 @@ export {
     heroImg,
     aboutimg,
     luxury,
-    event,
     membership,
     contact,
     twitter,

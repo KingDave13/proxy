@@ -105,9 +105,9 @@ export const footerLinks =[
     route: "/about",
   },
   {
-    id: "listings",
-    name: "Listings",
-    route: "/listings",
+    id: "properties",
+    name: "Properties",
+    route: "/properties",
   },
   {
     id: "agents",

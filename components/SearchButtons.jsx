@@ -11,12 +11,12 @@ const ButtonCard = ({ name, Icon, index }) => {
             <motion.div
                 variants={fadeIn('', 'spring', index * 0.2, 0.75)}
                 className='cursor-pointer bg-white shadow-md pt-6 
-                pb-6 pl-12 pr-12 items-center justify-center flex
+                pb-6 pl-8 pr-8 items-center justify-center flex
                 rounded-md'
-                style={{ width: '190px', height: '120px' }}
+                style={{ width: '200px', height: '120px' }}
             >
                 <div className='flex items-center justify-center relative 
-                gap-2 flex-col'>
+                gap-3 flex-col'>
                     <Icon size={30} className='text-main' />
 
                     <p className="text-main text-[15px] font-semibold">

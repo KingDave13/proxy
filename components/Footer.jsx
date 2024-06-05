@@ -53,9 +53,9 @@ const Footer = () => {
                     md:mt-8 ss:mt-8 mt-6'>
                         {footerLinks.map((footerLink, index) => (
                             <div key={index} className='flex mr-8'>
-                                <h4 className='md:text-[17px] 
+                                <h4 className='md:text-[17px] navsmooth
                                 ss:text-[15px] text-[14px] text-main
-                                cursor-pointer hover:text-primaryalt'>
+                                cursor-pointer hover:text-custom-gradient'>
                                     {footerLink.name}
                                 </h4>
                             </div>

@@ -62,12 +62,6 @@ export const SearchBtns = [
     link: "properties/modern"
   },
   {
-    id: "family",
-    name: "Family House",
-    Icon: TbBuildingCottage,
-    link: "properties/familyhouse"
-  },
-  {
     id: "apartment",
     name: "Apartment",
     Icon: BsBuildings,

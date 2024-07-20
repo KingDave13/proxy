@@ -61,7 +61,7 @@ const Navbar = () => {
             src={logoalt} 
             alt='logo'
             height={'auto'}
-            width={160}
+            width={180}
           />
         </Link>
 
@@ -91,9 +91,9 @@ const Navbar = () => {
 
         <button className='border-gradient border-[1px] grow4 justify-center 
         hidden md:flex text-[16px] py-2.5 px-10 text-main rounded-md 
-        w-[15%]'
+        w-[20%]'
             >
-              Sign In
+              Sign In or Register
           </button>
 
         {/* FOR MOBILE */}

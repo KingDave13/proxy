@@ -17,7 +17,16 @@ export const navLinks = [
   {
     id: "properties",
     title: "Properties",
-    route: "/properties",
+    links: [
+      {
+        name: "Residential",
+        route: "/properties/residential",
+      },
+      {
+        name: "Commercial",
+        route: "properties/commercial",
+      },
+    ],
   },
   {
     id: "agents",
@@ -27,12 +36,38 @@ export const navLinks = [
   {
     id: "about",
     title: "About Us",
-    route: "/about",
+    links: [
+      {
+        name: "About Us",
+        route: "/about",
+      },
+      {
+        name: "Contact Us",
+        route: "/contact",
+      },
+      {
+        name: "Services",
+        route: "/services",
+      },
+    ],
   },
   {
-    id: "contact",
-    title: "Contact Us",
-    route: "/contact",
+    id: "resources",
+    title: "Resources",
+    links: [
+      {
+        name: "About Us",
+        route: "/about",
+      },
+      {
+        name: "Contact Us",
+        route: "/contact",
+      },
+      {
+        name: "Services",
+        route: "/services",
+      },
+    ],
   },
 ];
 
